@@ -2,14 +2,11 @@ import React from 'react'
 import Shoe from './../assets/Shoe.svg'
 import Jaba from './../assets/jaba.svg'
 import Shoe2 from './../assets/Shoe2.svg'
-import Crop from './../assets/crop.svg'
-import Mens from './../assets/mens.svg'
-import WOmens from './../assets/womens.svg'
-import Shoulder from './../assets/shoulder.svg'
+
 import Price from './../assets/price.svg'
 import Nav from './../components/Navbar';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
+import Scroller from '../components/scroll'
 import Butt from '../components/butt'
 import Buut from '../components/buut'
 // import { Link } from 'react-router-dom'
@@ -82,26 +79,15 @@ const Home = () => {
 
     </div>
     <div className=' z-20  bg-black h-full relative md:mt-20  pt-[100px]  '>   
-    <span className='flex flex-con text-6xl flex-col font-[1000] items-center text-white    '>
+    <span className='flex  text-6xl flex-col font-[1000] items-center text-white    '>
       FEATURED
-      <span className='flex text-3xl flex-col font-[700] items-center text-white p-10 uppercase     '>
+      <span className=' text-3xl font-[700]  text-white p-10 uppercase     '>
       Midnight Couture collections
     </span>
+      <div className='z-20  item-center h-screen  w-screen'>
+   <Scroller/>
+      </div>
     </span>
-   <div className='w-full flex   pt-10 '>
-   {/* <ParallaxLayer offset={0.3}  speed={1.5} horizontal={true} style={{  marginLeft:'100px',display:'flex',marginTop:'430px', flexDirection:'row', height:'492px'    }}> */}
-   <img src={Crop} alt='shoe' className='w-full h-full' />
-   {/* </ParallaxLayer> */}
-   {/* <ParallaxLayer offset={1}  speed={1.15} horizontal={true} style={{ zIndex:1,    }}> */}
-   <img src={Shoulder} alt='shoe' className='w-full h-full ' />
-   {/* </ParallaxLayer> */}
-   {/* <ParallaxLayer offset={1}  speed={2.15} horizontal={true} style={{ zIndex:1,    }}> */}
-   <img src={Mens} alt='shoe' className='w-full h-full  ' />
-   {/* </ParallaxLayer> */}
-   {/* <ParallaxLayer offset={1}  speed={3.15} horizontal={true} style={{ zIndex:1,    }}> */}
-   <img src={WOmens} alt='shoe' className='w-full h-full  ' />
-   {/* </ParallaxLayer> */}
-   </div>
 
     <div className='flex mx-20 mt-[8rem]    text-white'>
      <div className=' flex flex-col '>
